@@ -15,7 +15,7 @@ resource "aws_lb_target_group" "target_group-2" {
 }
 
 resource "aws_lb" "load_balancer-2" {
-  name               = "misa-lb"
+  name               = "load_balancer-2"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.security_group-2.id]
