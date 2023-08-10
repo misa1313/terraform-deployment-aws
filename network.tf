@@ -96,7 +96,7 @@ resource "aws_route53_zone" "route53-2" {
 
 resource "aws_route53_record" "route53-record-test" {
   zone_id = aws_route53_zone.route53-2.zone_id
-  name    = "aws.kinntel.com"
+  name    = "aws.domain.com"
   type    = "A"
   alias {
     name                   = aws_lb.load_balancer-2.dns_name
